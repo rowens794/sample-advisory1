@@ -2,8 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import clientInfo from '../../data/clientInfo'
-import Heading from '../../page-sections/heading-sections/simple-centered'
-import Contact from '../../page-sections/contact/split-two-tone'
+// import Heading from '../../page-sections/heading-sections/simple-centered'
 
 const Index: NextPage = () => {
   return (
@@ -18,11 +17,11 @@ const Index: NextPage = () => {
       </Head>
 
       <main className="relative min-h-[calc(100vh-10rem)] ">
-        <Heading
+        {/* <Heading
           heading="We've Recieved Your Message"
           boldText="Thanks for Reaching Out!"
           bodyText="We'll be in touch soon."
-        />
+        /> */}
       </main>
     </div>
   )
