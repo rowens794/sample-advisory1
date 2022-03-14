@@ -44,7 +44,7 @@ export default function index({}: Props) {
                   <a>
                     <button
                       type="submit"
-                      className="w-full px-4 py-2 my-4 text-lg bg-transparent border-2 shadow-sm border-primary-700 text-primary-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 md:my-0"
+                      className="w-full px-4 py-2 my-4 text-lg bg-transparent border-2 shadow-sm border-primary-900 text-primary-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 md:my-0"
                     >
                       Our Story
                     </button>

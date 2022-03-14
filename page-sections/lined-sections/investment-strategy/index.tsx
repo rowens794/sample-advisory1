@@ -5,14 +5,14 @@ type Props = {}
 
 export default function index({}: Props) {
   return (
-    <section className="bg-gray-400">
+    <section className="bg-gray-200">
       <div className="relative max-w-6xl px-4 py-16 m-auto md:py-24">
         <div className="m-6 md:m-12 md:my-auto">
           <div className="">
             <div className="my-4 text-base font-light text-gray-800 md:text-lg">
-              <h1 className="pl-6 font-serif text-3xl font-extrabold text-gray-800 transform -translate-x-8 border-l-8 border-primary-800 md:-translate-x-14 md:pl-12 md:text-4xl lg:text-5xl">
+              <h2 className="pl-6 font-serif text-3xl font-extrabold text-gray-800 transform -translate-x-8 border-l-8 border-primary-800 md:-translate-x-14 md:pl-12 md:text-4xl lg:text-5xl">
                 Our Approach to Investing
-              </h1>
+              </h2>
 
               <div className="max-w-3xl ">
                 <p className="my-4">
@@ -68,7 +68,7 @@ export default function index({}: Props) {
           </div>
         </div>
 
-        <div className="absolute top-0 h-full border-l border-gray-300 border-dashed left-4" />
+        <div className="absolute top-0 h-full border-l border-gray-400 border-dashed left-4" />
       </div>
     </section>
   )
@@ -89,7 +89,7 @@ const InvestingBlock = ({
         {number}
       </div>
       <div>
-        <h3 className="text-lg font-bold text-gray-600 ">{heading}</h3>
+        <span className="text-lg font-bold text-gray-600 ">{heading}</span>
         <p className="pt-2 text-base font-light">{body}</p>
       </div>
     </div>

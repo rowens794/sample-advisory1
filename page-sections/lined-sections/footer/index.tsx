@@ -53,33 +53,38 @@ export default function index({}: Props) {
         </div>
 
         <div className="py-6 sm:grid sm:grid-cols-2 ">
-          <ul>
+          <div>
             <p className="w-full text-center underline lg:text-right">
               Who We Serve
             </p>
-            <BulletItem name="HNW Families" />
-            <BulletItem name="Corporations" />
-            <BulletItem name="Retirement Plans" />
-            <BulletItem name="Nonprofits" />
-          </ul>
-          <ul>
+            <ul>
+              <BulletItem name="HNW Families" />
+              <BulletItem name="Corporations" />
+              <BulletItem name="Retirement Plans" />
+              <BulletItem name="Nonprofits" />
+            </ul>
+          </div>
+
+          <div>
             <p className="w-full pt-8 text-center underline sm:pt-0 lg:text-right">
               Site Links
             </p>
-            {navSections
-              .filter((item) => {
-                return item.type !== 'CTA'
-              })
-              .map((link) => {
-                return (
-                  <LinkItem
-                    name={link.title}
-                    href={link.href}
-                    key={link.title}
-                  />
-                )
-              })}
-          </ul>
+            <ul>
+              {navSections
+                .filter((item) => {
+                  return item.type !== 'CTA'
+                })
+                .map((link) => {
+                  return (
+                    <LinkItem
+                      name={link.title}
+                      href={link.href}
+                      key={link.title}
+                    />
+                  )
+                })}
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -117,7 +122,7 @@ const BulletItem = ({ name }: { name: string }) => {
 let LinkItemTwo = ({ name, href }: { name: string; href: string }) => {
   return (
     <Link href={href}>
-      <a className="inline-block px-4 text-xs text-gray-400">{name}</a>
+      <a className="inline-block px-4 text-xs text-gray-500">{name}</a>
     </Link>
   )
 }
@@ -125,7 +130,7 @@ let LinkItemTwo = ({ name, href }: { name: string; href: string }) => {
 let FileDownloadLink = ({ name, href }: { name: string; href: string }) => {
   return (
     <a
-      className="inline-block px-4 text-xs text-gray-400"
+      className="inline-block px-4 text-xs text-gray-500"
       href={href}
       download={name}
     >
