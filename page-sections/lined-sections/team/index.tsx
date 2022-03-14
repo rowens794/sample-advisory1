@@ -25,6 +25,7 @@ export default function index({}: Props) {
                     title={member[1].position}
                     photo={member[1].headshot}
                     link={`/team/${member[0]}`}
+                    key={member[1].name}
                   />
                 )
               })}

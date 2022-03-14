@@ -94,7 +94,7 @@ export default function Index() {
                     })
                     .map((link) => {
                       return (
-                        <Popover.Button id={link.title}>
+                        <Popover.Button key={link.title}>
                           <Link href={link.href}>
                             <a className="flex p-2 uppercase">
                               <span className="ml-3 text-base text-gray-900">

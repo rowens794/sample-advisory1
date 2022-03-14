@@ -71,7 +71,13 @@ export default function index({}: Props) {
                 return item.type !== 'CTA'
               })
               .map((link) => {
-                return <LinkItem name={link.title} href={link.href} />
+                return (
+                  <LinkItem
+                    name={link.title}
+                    href={link.href}
+                    key={link.title}
+                  />
+                )
               })}
           </ul>
         </div>
