@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 type Props = {}
 
 export default function index({}: Props) {
@@ -13,12 +13,16 @@ export default function index({}: Props) {
             </h1>
 
             <div className="w-full my-16 text-center">
-              <button
-                type="submit"
-                className="w-64 px-4 py-2 my-4 text-lg text-center bg-transparent border-2 shadow-sm border-primary-300 text-primary-300 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 md:my-0"
-              >
-                Start a Conversation
-              </button>
+              <Link href="/contact">
+                <a>
+                  <button
+                    type="submit"
+                    className="w-64 px-4 py-2 my-4 text-lg text-center bg-transparent border-2 shadow-sm border-primary-300 text-primary-300 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 md:my-0"
+                  >
+                    Start a Conversation
+                  </button>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
