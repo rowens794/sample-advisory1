@@ -7,7 +7,6 @@ const isProduction = process.env.NODE_ENV === 'production'
 
 //headers
 import SimpleSolidHeader from '../page-sections/navigation/simple-solid'
-import Footer from '../page-sections/footers/simple-centered'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -27,7 +26,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className="relative ">
       <SimpleSolidHeader />
       <Component {...pageProps} />
-      {/* <Footer /> */}
     </div>
   )
 }
