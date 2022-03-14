@@ -5,6 +5,8 @@ import clientInfo from '../data/clientInfo'
 import Footer from '../page-sections/lined-sections/footer'
 import Curl from '../components/svg-backgrounds/curl'
 
+import Process from '../components/illustrations/investment-process'
+
 const About: NextPage = () => {
   return (
     <div className="relative">
@@ -66,42 +68,8 @@ const About: NextPage = () => {
                   </div>
                 </div>
 
-                <div className="relative max-w-md m-auto my-12">
-                  <div className="flex flex-row w-full px-4 py-2 my-4 bg-gray-400 rounded-sm drop-shadow-md lg:py-2 lg:px-6">
-                    <span className="font-serif text-3xl text-gray-500 w-7 md:text-3xl ">
-                      1.
-                    </span>
-                    <p className="flex-grow w-full m-4 font-serif text-xl text-left text-gray-700 ">
-                      Define an Investment Policy
-                    </p>
-                  </div>
-
-                  <div className="flex flex-row w-full px-4 py-2 my-4 bg-gray-400 rounded-sm drop-shadow-md lg:py-2 lg:px-6">
-                    <span className="font-serif text-3xl text-gray-500 w-7 md:text-3xl ">
-                      2.
-                    </span>
-                    <p className="flex-grow w-full m-4 font-serif text-xl text-left text-gray-700 ">
-                      Construct Asset Class Exposure
-                    </p>
-                  </div>
-
-                  <div className="flex flex-row w-full px-4 py-2 my-4 bg-gray-400 rounded-sm drop-shadow-md lg:py-2 lg:px-6">
-                    <span className="font-serif text-3xl text-gray-500 w-7 md:text-3xl ">
-                      3.
-                    </span>
-                    <p className="flex-grow w-full m-4 font-serif text-xl text-left text-gray-700 ">
-                      Deploy Capital to Active & Passive Managers
-                    </p>
-                  </div>
-
-                  <div className="flex flex-row w-full px-4 py-2 my-4 bg-gray-400 rounded-sm drop-shadow-md lg:py-2 lg:px-6">
-                    <span className="font-serif text-3xl text-gray-500 w-7 md:text-3xl ">
-                      4.
-                    </span>
-                    <p className="flex-grow w-full m-4 font-serif text-xl text-left text-gray-700 ">
-                      Continuously Monitor & Adjust to Meet Market Conditions
-                    </p>
-                  </div>
+                <div className="relative max-w-md m-auto my-12 aspect-3">
+                  <Process />
                 </div>
               </div>
 

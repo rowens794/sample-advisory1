@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import FinancialPlanning from '../../../components/illustrations/financial-planning'
 type Props = {}
 
 export default function index({}: Props) {
@@ -54,13 +54,14 @@ export default function index({}: Props) {
             </div>
 
             <div className="hidden lg:block">
-              <Image
+              {/* <Image
                 width={325}
                 height={550}
                 src="/images/planning_graphic.webp"
                 layout="fixed"
                 alt="Wellinton Wealth Planning Framework"
-              />
+              /> */}
+              <FinancialPlanning />
             </div>
           </div>
         </div>
