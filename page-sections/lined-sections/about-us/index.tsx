@@ -59,6 +59,7 @@ export default function index({}: Props) {
                 height={550}
                 src="/images/planning_graphic.webp"
                 layout="fixed"
+                alt="Wellinton Wealth Planning Framework"
               />
             </div>
           </div>

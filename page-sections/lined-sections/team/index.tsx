@@ -66,7 +66,13 @@ const Member = ({
   return (
     <Link href={link} key={name}>
       <a className="w-56 py-4 mx-auto text-center grayscale hover:grayscale-0">
-        <Image className="rounded-full" src={photo} width={150} height={150} />
+        <Image
+          className="rounded-full"
+          src={photo}
+          width={150}
+          height={150}
+          alt={name}
+        />
         <p className="font-bold">{name}</p>
         <p className="text-sm font-light">{title}</p>
       </a>
