@@ -17,7 +17,7 @@ export default function index({}: Props) {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 my-16 lg:gap-18">
+        <div className="py-8 my-16 md:gap-18 md:grid md:grid-cols-3 md:py-0">
           <div className="m-auto text-center" style={{ width: '240px' }}>
             <span className="font-extrabold text-7xl text-primary-300">
               35

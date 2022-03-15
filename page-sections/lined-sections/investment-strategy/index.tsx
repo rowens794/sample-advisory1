@@ -34,7 +34,7 @@ export default function index({}: Props) {
                 </p>
               </div>
 
-              <div className="flex flex-row flex-wrap gap-4 py-12">
+              <div className="grid grid-cols-1 gap-8 py-12 lg:grid-cols-3 lg:gap-4">
                 <InvestingBlock
                   number="1"
                   heading="Diversification"
@@ -84,7 +84,7 @@ const InvestingBlock = ({
   body: string
 }) => {
   return (
-    <div className="flex flex-row h-56 gap-3 p-6 bg-gray-300 border-t-4 rounded-sm w-80 border-primary-800">
+    <div className="flex flex-row w-full gap-3 p-6 bg-gray-300 border-t-4 rounded-sm border-primary-800 lg:h-56 lg:w-80">
       <div className="text-6xl font-light text-center text-gray-600 ">
         {number}
       </div>
